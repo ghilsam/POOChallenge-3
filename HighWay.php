@@ -10,11 +10,6 @@ abstract class HighWay
 
     abstract public function addVehicle(Vehicle $vehicle): void;
 
-    public function __construct(int $nbLane, int $maxSpeed)
-    {
-        $this->setNbLane($nbLane);
-        $this->setMaxSpeed($maxSpeed);
-    }
     public function getCurrentVehicles(): array
     {
         return $this->currentVehicles;
